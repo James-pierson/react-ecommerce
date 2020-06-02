@@ -6,7 +6,7 @@ import Navbar from './Components/Navbar'
 import Details from './Components/Details'
 import Cart from './Components/Cart'
 import ProductList from './Components/ProductList'
-import Default from './Components/Details'
+import Default from './Components/Default'
 
 class App extends Component {
   return() {
@@ -16,7 +16,7 @@ class App extends Component {
         <Switch>
           <Route path="/" component={ProductList}/>
           <Route path="/details" component={Details}/>
-          <Route path="/store" component={Store}/>
+          <Route path="/cart" component={Cart}/>
           <Route component={Default}/>
         </Switch>
         <ProductList />
