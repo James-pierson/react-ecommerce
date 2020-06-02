@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Component } from 'react';
+import {Switch,Route} from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Navbar from './Components/Navbar'
@@ -7,16 +8,24 @@ import Cart from './Components/Cart'
 import ProductList from './Components/ProductList'
 import Default from './Components/Details'
 
-function App() {
-  return (
-    <React.Fragment>
-      <Navbar />
-      <ProductList />
-      <Details />
-      <Cart />
-      <Default />
-    </React.Fragment>
-  );
+class App extends Component {
+  return() {
+    return (
+      <React.Fragment>
+        <Navbar />
+        <Switch>
+          <Route path="/" component={ProductList}/>
+          <Route path="/details" component={Details}/>
+          <Route path="/store" component={Store}/>
+          <Route component={Default}/>
+        </Switch>
+        <ProductList />
+        <Details />
+        <Cart />
+        <Default />
+      </React.Fragment>
+    )
+  }
 }
 
 export default App;
