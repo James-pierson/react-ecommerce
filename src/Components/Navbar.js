@@ -6,6 +6,9 @@ export default class Navbar extends Component {
         return (
             <nav className="navbar navbar-exand-sm navbar-dark px-sm-5">
             
+            <Link to="/">
+            
+            </Link>
             </nav>
         )
     }
