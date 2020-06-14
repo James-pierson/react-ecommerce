@@ -22,7 +22,7 @@ export default class Navbar extends Component {
                 </ul>
                 <Link to="/cart" className="ml-auto">
                     <button>
-                        <i className="fas fa-cart-plus"/>
+                        <i className="fas fa-cart-plus" />
                         My cart
                     </button>
                 </Link>
@@ -32,4 +32,9 @@ export default class Navbar extends Component {
 }
 const ButtonContainer = styled.button`
 text-transform: capitalize;
+font-size: 1.4rem;
+background: transparent;
+border: 0.05rem solid var(--lightBlue);
+color: var(--lightBlue);
+border-radius:0.5
 `
