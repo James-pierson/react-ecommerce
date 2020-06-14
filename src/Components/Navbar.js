@@ -21,10 +21,12 @@ export default class Navbar extends Component {
                     </li>
                 </ul>
                 <Link to="/cart" className="ml-auto">
-                    <button>
-                        <i className="fas fa-cart-plus" />
+                    <ButtonContainer>
+                        <span className="mr-2">
+                            <i className="fas fa-cart-plus" />
+                        </span>
                         My cart
-                    </button>
+                    </ButtonContainer>
                 </Link>
             </nav>
         )
@@ -36,5 +38,8 @@ font-size: 1.4rem;
 background: transparent;
 border: 0.05rem solid var(--lightBlue);
 color: var(--lightBlue);
-border-radius:0.5
+border-radius:0.5rem;
+padding: 0.2rem 0.5rem;
+cursor:pointer;
+margin:0.2rem 0.5rem 0.2rem 0;
 `
