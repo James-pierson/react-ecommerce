@@ -17,7 +17,7 @@ export default class ProductList extends Component {
                         <div classname="row">
                         <ProductConsumer>
                             {(value)=> {
-                                return <h1>{value}</h1>
+                                console.log(value);
                             }}
                         </ProductConsumer>
                         </div>
