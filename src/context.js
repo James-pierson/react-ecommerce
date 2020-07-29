@@ -10,6 +10,7 @@ class ProductProvider extends Component {
         products: storeProducts,
         detailProduct: detailProduct
     }
+    
     handleDetail = () => {
         console.log('hello from detail');
     }
