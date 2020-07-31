@@ -16,7 +16,7 @@ export default class Product extends Component {
                         </Link>
 
                         <button className="cart-btn" disabled={inCart ? true : false} onClick={() => { console.log('added to the cart') }}>
-                            {inCart ? (<p className="text-capitalize mb-0" disabled>in cart</p>) : (<i className="fas fa-cart" />)}
+                            {inCart ? (<p className="text-capitalize mb-0" disabled>{" "}in cart</p>) : (<i className="fas fa-cart" />)}
                         </button>
 
                     </div>
