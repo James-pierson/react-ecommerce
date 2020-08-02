@@ -59,6 +59,10 @@ const ProductWrapper = styled.div`
     position: relative;
     overflow:hidden;
 }
+.card-img-top {
+
+}
+
 .img-container:hover .card-img-top{
     transform:scale(1.2);
 }
