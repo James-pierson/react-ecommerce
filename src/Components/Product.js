@@ -77,4 +77,7 @@ const ProductWrapper = styled.div`
     border-radius: 0.5rem 0 0 0;
     transform: translate(100%,100%);
 }
+.img-container:hover .cart-btn{
+    transform:translate(0,0);
+}
 `
